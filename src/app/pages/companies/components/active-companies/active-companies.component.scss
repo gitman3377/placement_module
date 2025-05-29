@@ -1,14 +1,25 @@
 .overall_div {
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 .add-cmp {
-  padding: 10px 20px;
-  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  width: 207px;
+  height: 36px;
+  padding: 8px 14px 8px 14px;
+  margin-bottom: 18px;
+  background-color: #4f46e5;
+  border-radius: 8px;
   color: white;
+  font-family: Poppins, sans-serif;
+  font-size: var(--font-size-medium);
   border: none;
   cursor: pointer;
-} 
+
+}
+
+
 
 // sample
 .sidebar {
@@ -18,8 +29,8 @@
   width: 530px;
   height: 100%;
   background-color: #f4f4f4;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-  transform: translateX(100%); 
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -27,10 +38,11 @@
 }
 
 .sidebar.active {
-  transform: translateX(0); 
+  transform: translateX(0);
 }
 
-.sidebar-header, .sidebar-footer {
+.sidebar-header,
+.sidebar-footer {
   padding: 15px;
   background-color: #ddd;
 }
@@ -48,4 +60,155 @@
   padding: 8px 12px;
   cursor: pointer;
   float: right;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.company-details {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.company-name {
+  color: var(--color-primary);
+  margin: 0;
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.company-location {
+  margin: 2px 0 0 0;
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-light);
+  color: var(--color-secondary);
+}
+
+.card-menu {
+  color: var(--color-primary);
+  padding: 0px 8px;
+  cursor: pointer;
+}
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.menu-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.menu-tooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-tooltip li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.menu-tooltip li:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+/* Show tooltip on hover */
+.menu-container:hover .menu-tooltip {
+  display: block;
+}
+
+
+.card-sub-details {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-small);
+  color: #999;
+  margin-top: 12px;
+}
+
+.card-sub-details i {
+  margin-right: 6px;
+  margin-left: 12px;
+}
+
+.industry {
+  margin-bottom: 6px;
+}
+
+.size {
+  margin-bottom: 2px;
+}
+
+.description {
+  font-size: var(--font-size-small);
+  margin: 4px 0px 4px 12px;
+  padding-top: 6px;
+  color: var(--color-secondary);
+  border-top: 1px solid #eee;
+}
+
+.card-footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  margin: 4px 4px 4px 12px;
+  font-size: 12px;
+
+}
+
+.placement-events {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.placement-events i {
+  margin-right: 6px;
+  color: var(--color-secondary);
+}
+
+.students-placed {
+  color: var(--color-primary);
+}
+
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-right: 8px;
+  flex-direction: row;
+}
+
+.footer-item i {
+  margin-right: 6px;
+  color: var(--color-secondary);
 }

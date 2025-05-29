@@ -4,6 +4,32 @@
     flex-wrap: wrap;
   }
 
+  .company-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 6px 6px 54px 0px #0000000D;
+    font-family: Poppins, sans-serif;
+    max-width: 360px;
+    max-height: 280px;
+    border: 1px solid #d1d1d6;
+    margin:  8px 4px 4px 0px;
+  }
 
-  
-  
+
+  :root {
+    /* Font Sizes */
+    --font-size-xsmall: 10px;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    /* Font Colors */
+    --color-primary: #007AFF;
+    --color-secondary: #1E1E1E;
+    --color-text-dark: #414651;
+    --color-text-light: #757575;
+
+    --font-light: 400;
+    --font-regular:500;
+    --font-medium: 600;
+  }

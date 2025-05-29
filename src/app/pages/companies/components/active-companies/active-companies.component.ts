@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ElementRef,HostListener,viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-active-companies',
@@ -18,5 +18,4 @@ export class ActiveCompaniesComponent {
     console.log('active company')
     this.issidebarvisible = !this.issidebarvisible;
   }
-
 }

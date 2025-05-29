@@ -1,7 +1,9 @@
 <div class="overall_div">
 
-    <input type="button" value="add" class="add-cmp" (click)="addCompany()">
-
+    <button class="add-cmp" (click)="toggleSidebar()">
+        <i class="fa fa-plus-circle" style="margin-right: 6px;"></i>
+        Add a New Company
+    </button>
     <div class="sidebar" [class.active]="issidebarvisible">
         <div class="sidebar-header">
             <button class="close-btn" (click)="toggleSidebar()">X</button>
@@ -14,5 +16,46 @@
             <p>Footer area</p>
         </div>
     </div>
+    <div class="company-card">
+        <div class="card-header">
+            <img src="assets/images/image 6.png" class="company-logo" />
+            <div class="company-details">
+                <h3 class="company-name">Johnson & Johnson</h3>
+                <p class="company-location"><i class="fas fa-map-marker-alt"></i> Great Falls, Maryland</p>
+            </div>
+            <div class="card-menu">
+                <i class="fas fa-ellipsis-v menu-icon"></i>
+            </div>
+        </div>
+        <div class="card-sub-details">
+            <p class="industry"><i class="fas fa-briefcase"></i> Children products</p>
+            <p class="size"><i class="fas fa-users"></i> 200 - 500 employees</p>
+        </div>
+
+        <p class="description">
+            Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla facilisi etiam
+            dignissim.Convallis a cras semper auctor neque. Fringilla est ullamcorper eget nulla f
+        </p>
+        <!-- <div class="card-footer">
+            <div class ="placement-events">
+                 <div class="footer-item blue"><i class="fas fa-calendar-alt"></i> 12 placement events</div>
+            </div>
+            <div class="footer-item blue"><i class="fas fa-user-graduate"></i> 23 Students Placed</div>
+            <div class="footer-item"><i class="fas fa-rupee-sign"></i> Avg. CTC: 4.5 LPA</div>
+
+        </div> -->
+
+        <div class="card-footer">
+            <div>
+                <div class="placement-events"><i class="fas fa-calendar-alt"></i> 12 placement events</div>
+            </div>
+            <div class="footer-item">
+                <p class="students-placed"> <i class="fas fa-user-graduate"></i> 23 Students <span
+                        style="color: #757575;"> Placed</span></p>
+                <p> ₹ Avg. CTC: 4.5 LPA </p>
+            </div>
+        </div>
+    </div>
+
 
 </div>
